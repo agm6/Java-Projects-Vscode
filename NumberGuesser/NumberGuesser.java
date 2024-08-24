@@ -17,6 +17,9 @@ public class NumberGuesser{
         Random rand = new Random();
         int n = rand.nextInt(10) + 1;
 
+        //This integer holds the amount of times the user has guessed during a game.
+        int counter = 0;
+
         //This loop is used to keep the game going in the event of a wrong answer.
         while(true){
         
@@ -27,19 +30,20 @@ public class NumberGuesser{
             int guess = input.nextInt();
             //input.close();
 
-
             //These if statements compare the user's guess to the random number.
-            //If the user is correct they get a win message and the game ends. If not they are told if their guess is too high 
-            //or too low and can try again.
+            //If the user is correct the game ends with a win message and their number of guesses diplayed.
+            //If not, the counter increments and they are told their guess is either too high or too low and to try again.
             if(guess == n){
-                System.out.println("Thats correct! You win!");
+                System.out.println("Thats correct! You won in "+counter+" guesses!");
                 break;
             }
             else if(guess >= n){
                 System.out.println("Thats too high! Try again.");
+                counter++;
             }
             else if(guess <= n){
                 System.out.println("Thats too low! Try again.");
+                counter++;
             }
 
         }
