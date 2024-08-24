@@ -1,0 +1,10 @@
+import java.util.scanner;
+import java.util.Random;
+
+public class NumberGuesser{
+
+    Random rand = new Random();
+
+    int n = rand.nextInt(10);
+    
+}
