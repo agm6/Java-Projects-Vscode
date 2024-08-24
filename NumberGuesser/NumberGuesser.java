@@ -3,19 +3,20 @@ import java.util.Random;
 
 public class NumberGuesser{
 
-    Scanner input = new Scanner(System.in);
-    Random rand = new Random();
-
     public static void main(String[] args) {
+
+        Random rand = new Random();
+        int n = rand.nextInt(10) + 1;
 
         while(true){
         
+            Scanner input = new Scanner(System.in);
             System.out.println("Guess a number between 1 and 10:");
             int guess = input.nextInt();
-
-            int n = rand.nextInt(10) + 1;
+            //input.close();
 
             if(guess == n){
+                System.out.println("Thats correct! You win!");
                 break;
             }
             else if(guess >= n){
