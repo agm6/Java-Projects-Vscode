@@ -24,7 +24,7 @@ public class Contact{
 
     @Override
     public String toString(){
-        String data = contactName+phoneNumber+contactEmail;
+        String data = "Contact Name: "+contactName+"\nPhone Number: "+phoneNumber+"\nEmail Address: "+contactEmail;
         return data;
     }
 
