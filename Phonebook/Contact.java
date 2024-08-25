@@ -22,4 +22,10 @@ public class Contact{
         return contactEmail;
     }
 
+    @Override
+    public String toString(){
+        String data = contactName+phoneNumber+contactEmail;
+        return data;
+    }
+
 }
