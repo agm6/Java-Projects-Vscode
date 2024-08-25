@@ -1,4 +1,4 @@
-public class Contact {
+public class Contact{
     
     private String contactName;
     private int phoneNumber;
@@ -8,6 +8,18 @@ public class Contact {
         contactName = name;
         phoneNumber = number;
         contactEmail = email;
+    }
+
+    String getName(){
+        return contactName;
+    }
+
+    int getNumber(){
+        return phoneNumber;
+    }
+
+    String getEmail(){
+        return contactEmail;
     }
 
 }
