@@ -23,7 +23,7 @@ public class Phonebook{
             Contact var = phoneBook.get(name);
             System.out.println(var.toString());
         }
-        else{
+        else if(choice == 2){
             System.out.println("Enter name, number, email");
             String name2 = n.nextLine();
             int number2 = Integer.parseInt(n.nextLine());
@@ -34,6 +34,9 @@ public class Phonebook{
 
             Contact var = phoneBook.get(name2);
             System.out.println(var.toString());
+        }
+        else{
+            System.out.println("That is not a valid choice.");
         }
     }
 }
