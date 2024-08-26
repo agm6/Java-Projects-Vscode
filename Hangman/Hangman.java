@@ -24,10 +24,10 @@ public class Hangman{
             for(int i = 0; i < letters.length; i++){
                 if(letters[i].equals(guess)){
                     System.out.println("You guessed correct!");
-                    wordDisplayed[i].equals(guess);
+                    wordDisplayed[i] = guess;
                     System.out.println(Arrays.toString(wordDisplayed));
 
-                    for(int j = 0; j < wordDisplayed.length; i++){
+                    /*for(int j = 0; j < wordDisplayed.length; i++){
                         if(wordDisplayed[j].equals("_")){
                             blanks = true;
                         }
@@ -35,7 +35,7 @@ public class Hangman{
                     if(!blanks){
                         System.out.println("You win!");
                         break;
-                    }
+                    }*/
 
                 }
                 else{
